@@ -47,12 +47,12 @@ bash /<<cloned_repository_path>>/mysql_backup/restore.sh
 
 ## What this backup method is good for
 1. Doing backup and restore for non-Enterprise MySQL server version
-2. If the MySQL server is a single instance and it's not intended to be used for MySQL cluster backup (though, it can be used as a part of restore/backup on Slave)
+2. If the MySQL server is a single instance and it's not intended to be used for MySQL cluster (on master or master-master set ups) backup (though, it can be used as a part of restore/backup on Slave)
 3. Great solution for small projects without intensive writes
 
 ## The downsides of this backup method
 1. It can't backup and restore incrementally
-2. It's not recommended to use it for MySQL cluster due to locks
+2. It's not recommended to use it for MySQL cluster due to locks (on master or master-master set ups)
 3. It's not recommended to use it for write intensive databases due to locks
 
 ## When the database keeps growing...
