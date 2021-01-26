@@ -57,7 +57,7 @@ bash /<<cloned_repository_path>>/mysql_backup/restore.sh
 
 ## When the database keeps growing...
 1. Grow hardware vertically (more RAM, faster CPUs and disks) and increase buffers
-2. Switch to MySQL Enterprise or MariaDB or Percona Server to have incremental backups (or Postgres, sorry)
+2. Switch to MySQL Enterprise or MariaDB or Percona Server to have incremental backups (or Postgres)
 3. Do Master-Slave clustering
 4. Try combining different DB engines for different parts of application(s)
 4. If everything gets reeealy big: try sharding or switching to heterogenous database solutions
